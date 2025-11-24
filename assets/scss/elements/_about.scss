@@ -488,7 +488,7 @@ h2{
                         height: 18px;
                         line-height: 20px;
                         border-radius: 50px;
-                        background: rgba( #87AB42, $alpha: .15);
+                        background: var(--primary-100);
                         display: block;
                         text-align: center;
                         color: var(--color-primary-2);
@@ -637,7 +637,7 @@ h2{
     }
     &.home-eight{
        .marquee .marquee__item .main--wrapper-tt h2{
-        -webkit-text-stroke: 1px rgba(#87AB42, $alpha: .2);
+        -webkit-text-stroke: 1px var(--primary-100);
        } 
     }
 }
@@ -1175,7 +1175,7 @@ h2{
                 line-height: 1;
                 font-weight: 600;
                 width: max-content;
-                -webkit-text-stroke: 1px rgba( #87AB42, $alpha: .4);
+                -webkit-text-stroke: 1px var(--primary-100);
                 -webkit-text-fill-color: white;
                 @media #{$sm-layout} {
                     font-size: 50px;
@@ -1207,7 +1207,7 @@ h2{
         }
     }
     &.bg{
-        background: #F0F4E6;
+        background: var(--primary-100);
     }
 }
 

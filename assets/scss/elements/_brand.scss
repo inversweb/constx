@@ -36,10 +36,7 @@
         }
     }
     &.area-5{
-        background: rgba(242, 245, 233, 0.58);
-        img{
-            filter: brightness(0) saturate(100%) invert(59%) sepia(57%) saturate(436%) hue-rotate(39deg) brightness(96%) contrast(83%);
-        }
+        background: var(--primary-100);
     }
 }
 

@@ -297,7 +297,7 @@
                     display: block;
                     text-align: center;
                     line-height: 22px;
-                    background: rgba(#87AB42, $alpha: .15);
+                    background: var(--primary-100);
                     border-radius: 50%;
                     color: var(--color-primary-2);
                     font-size: 10px;

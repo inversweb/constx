@@ -434,8 +434,8 @@
         bottom: -100%;
         left: 0;
         z-index: 1;
-        background: linear-gradient(180deg, rgba(135, 171, 66, 0) 0%, rgba(135, 171, 66, 0.82) 100%);
         transition: var(--transition);
+        background: linear-gradient(180deg, rgba(255, 112, 41, 0.1722) 0%, rgba(255, 112, 41, 0.82) 100%);
     }
     .tmp-icon-overlay-link-btn{
         position: absolute;

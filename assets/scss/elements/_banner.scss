@@ -1960,7 +1960,7 @@
 }
 .tmp-banner-slider-area3{
     padding: 210px 0 120px;
-    background: #F3F7ED;
+    background: var(--primary-100);
     @media #{$sm-layout} {
         padding: 140px 0 60px 0 !important;
     }
@@ -2096,13 +2096,14 @@
     z-index: 1;
     &::after{
         content: '';
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 28.82%, rgba(135, 171, 66, 0.45) 61.88%, #87AB42 100%);
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         z-index: -1;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.54%, rgba(255, 94, 20, 0.14) 61.88%, rgba(255, 94, 20, 0.81) 100%);
+
     }
     .banner-four-content{
         height: 100%;
@@ -2726,7 +2727,7 @@
 .tmp-banner-area.banner-ten{
     position: relative;
     z-index: 1;
-    background: linear-gradient(270.57deg, rgb(135 171 66 / 14%) 0.49%, rgb(135 171 66 / 7%) 54.24%, #87AB42 99.55%);
+    background: linear-gradient(270.57deg, rgb(171 91 66 / 14%) 0.49%, rgb(171 77 66 / 7%) 54.24%, #87AB42 99.55%);
     .shape{
         position: absolute;
         left: 0;
@@ -2768,7 +2769,7 @@
                 display: flex;
                 border-radius: 50%;
                 color: var(--color-heading-1);
-                background: #86ab4218;
+                background: rgb(171 66 66 / 9%);
                 position: relative;
                 z-index: 1;
                 align-items: center;
@@ -2785,7 +2786,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    background: #86ab420f;
+                    background: rgba(171, 66, 66, 0.048);
                 }
             }
         }
@@ -2800,7 +2801,7 @@
             display: block;
             max-width: max-content;
             .subtitle-bg{
-                background: var(--primary-200);
+                background: var(--primary-100);
                 color: var(--color-primary);
             }
         }
@@ -3270,7 +3271,7 @@
 }
 .tmp-banner-area.banner-five{
     &.with-image{
-        background-image: url(../images/bg/01.webp);
+        background-image: url(../images/bg/03.webp);
     }
 }
     

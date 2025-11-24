@@ -354,7 +354,7 @@
     right: 0;
     bottom: 0;
     padding: 20px 0 0 20px;
-    background: #F3F7ED;
+    background: var(--primary-100);
     border-top-left-radius: 10px;
     z-index: 1;
     @media (max-width: 768px)  {
@@ -437,7 +437,7 @@
         position: absolute;
         right: 0;
         top: -60px;
-        box-shadow: 30px 0 0 0 #F3F7ED;
+        box-shadow: 30px 0 0 0 var(--primary-100);
         overflow: hidden;
     }
     .bottom-left{
@@ -448,7 +448,7 @@
         position: absolute;
         left: -60px;
         bottom: 0;
-        box-shadow: 30px 0 0 0 #F3F7ED;
+        box-shadow: 30px 0 0 0 var(--primary-100);
         overflow: hidden;
     }
 }
@@ -504,7 +504,7 @@
 }
 
 .tmp-contact-area.contact{
-    background: rgba(#87AB42, $alpha: .1);
+    background: rgba(149, 149, 149, 0.1);
     .contact-form {
         .top{
             background-color: #ffffff;

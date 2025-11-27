@@ -2349,6 +2349,27 @@ header.header-center-short.header-seven{
     width: 100%;
     box-shadow: none;
     background: transparent;
+    &.with-shadow-nad-top-dark{
+        .header-top{
+            padding: 0 0;
+            .header-top-wrapper{
+                padding: 10px 0 10px;
+            }
+            background: var(--color-white);
+            *{
+                color: var(--color-body) !important;
+            }
+        }
+        .header-mid-one-wrapper {
+            box-shadow: var(--shadow-1);
+            .logo-area{
+                padding: 19px 0 19px;
+            }
+        }
+        .header-mid-one-wrapper{
+            padding: 0 40px;
+        }
+    }
     &.narrow{
         .header-mid-one-wrapper{
             top: 10px;

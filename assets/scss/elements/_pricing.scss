@@ -223,6 +223,31 @@
         }
     }
 }
+
+.col-xl-3{
+    .pricing-wrapper3{
+        .pricing-header{
+            .left{
+                .price{
+                    font-size: 26px;
+                }
+            }
+            .icon{
+                height: 60px;
+                width: 60px;
+                img{
+                    max-width: 30px;
+                }
+            }
+        }
+        .pricing-body{
+            padding: 30px 10px 0;
+        }
+        .pricing-button-area{
+            padding: 30px 10px 0;
+        }
+    }
+}
 .pricing-wrapper3{
     padding: 30px 14px;
     background: #FFFFFF;

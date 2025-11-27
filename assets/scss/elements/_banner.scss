@@ -351,10 +351,35 @@
         }
     }
 }
+
+.tmp-banner-slider-area.banner-wind-energy.banner-nine .banner-five-main-wrapper.industry-banner-before{
+    &::before{
+        backdrop-filter: blur(0);
+        background: rgba(0, 0, 0, 0.181);
+    }
+}
 .banner-five-main-wrapper {
     position: relative;
     z-index: 1;
     height: 860px;
+    &.industry-bg-1{
+        background-image: url(../images/bg/industry-1.webp);
+    }
+    &.industry-bg-2{
+        background-image: url(../images/bg/industry-2.webp);
+    }
+    &.industry-bg-3{
+        background-image: url(../images/bg/hydro-1.webp);
+    }
+    &.inverstor-1{
+        background-image: url(../images/bg/investor-1.webp);
+    }
+    &.inverstor-2{
+        background-image: url(../images/bg/investor-2.webp);
+    }
+    &.inverstor-3{
+        background-image: url(../images/bg/investor-3.webp);
+    }
     &::before{
         content: '';
         position: absolute;
@@ -1721,7 +1746,7 @@
 
     .title-banner {
         margin-top: 25px;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 55px;
         line-height: 72px;
         color: var(--color-black);
@@ -1845,7 +1870,7 @@
             p{
                 font-family: var(--font-secondary);
                 color: var(--color-heading-1);
-                font-weight: 400;
+                font-weight: 500;
             }
         }
     }
@@ -3396,6 +3421,7 @@
     .slider-img-02{
         background-image: url(../images/bg/wind-3.webp);
     }
+ 
 }
 
 .thumbBannerSlide-wind{
@@ -3775,9 +3801,9 @@
         right: 0;
         height: 100%;
         width: 100%;
-        background: #00000038;
+        background: #0000004c;
         z-index: -1;
-        backdrop-filter: blur(2px);
+        // backdrop-filter: blur(2px);
     }
     @media #{$mdsm-layout} {
         height: 770px;
@@ -3814,5 +3840,144 @@
         display: flex;
         align-items: center;
         gap: 30px;
+    }
+}
+
+.tmp-banner-slider-area2.banner-right-bento{
+    padding: 250px 0 120px 0;
+    &::after{
+        display: none;
+    }
+    .banner-three-wrapper {
+        padding: 0;
+        .b_one-pre{
+            padding: 5px 15px;
+            border-radius: 33px;
+            background: #f1f1f1;
+        }
+        p.desc{
+            font-family: var(--font-secondary);
+        }
+    }
+    .thumbnail-banner-right{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .floating-content{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #FFFFFF;
+            box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            bottom: 0%;
+            left: -8%;
+            padding: 30px;
+
+            .icon{
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 50%;
+                display: block;
+                text-align: center;
+                background: var(--primary-100);
+                svg{
+                    max-width: 25px;
+                }
+            }
+            .text{
+                h6{
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+                span{
+                    a{
+                        transition: var(--transition);
+                        color: var(--color-primary-2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner-area-slider-classic{
+    height: 920px;
+    background-image: url(../images/bg/bg-image-14.webp);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    &.image-two{
+        background-image: url(../images/bg/bg-image-15.webp);
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: linear-gradient(90deg, #FF5E14 1.59%, rgba(0, 0, 0, 0) 100%);
+        mix-blend-mode: multiply;
+    }
+    .banner-main-wrapper-one{
+        .pre-title{
+            p{
+                color: var(--color-white);
+                padding: 6px 15px;
+                border-radius: 33px;
+                background: #f1f1f139;
+                max-width: max-content;
+                margin-bottom: 20px;
+            }
+        }
+        .title{
+            color: var(--color-white);
+            font-weight: 700;
+            line-height: 1.2;
+            font-size: 74px;
+        }
+        p.disc{
+            color: var(--color-white);
+            max-width: 85%;
+        }
+    }
+}
+
+.mySwiper-slider-classic{
+    .swiper-btn{
+        width: 60px;
+        height: 60px;
+        line-height: 65px;
+        border-radius: 50%;
+        text-align: center;
+        color: var(--color-white);
+        font-size: 20px;
+        border: 1px solid #ffffff4d;
+        background: #ffffff1c;
+        transition: var(--transition);
+        backdrop-filter: blur(7px);
+        top: 58%;
+        &:hover{
+            background: var(--color-primary-2);
+            border: 1px solid var(--color-primary-2);
+            transform: scale(1.2);
+        }
+        &::after{
+            display: none;
+        }
+        &.swiper-button-prev{
+            left: 4%;
+        }
+        &.swiper-button-next{
+            right: 4%;
+        }
     }
 }

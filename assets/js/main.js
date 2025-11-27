@@ -703,6 +703,29 @@
 
       $(document).ready(function () {
 
+      // Initialize Main Slider
+      var swiperMain = new Swiper(".mySwiper-slider-classic", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        speed: 1300,
+        loop: true,
+        effect: 'fade',
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+
+
+      });
+
+      $(document).ready(function () {
+
           var swiperThumb = new Swiper(".tmpmySwiperThumb", {
               spaceBetween: 10,
               slidesPerView: 2,

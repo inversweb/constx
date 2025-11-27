@@ -215,10 +215,7 @@
                 }
             }
             .icon{
-                background: rgba(#87AB42, $alpha: .1);
-                img{
-                    filter: brightness(0) saturate(100%) invert(56%) sepia(88%) saturate(289%) hue-rotate(39deg) brightness(95%) contrast(87%);
-                }
+                background: var(--primary-100);
             }
             &::after{
                 background: var(--color-primary-2);
@@ -526,15 +523,7 @@
             filter: blur(75px);
         }
         .why-choose-wrapper-list li{
-            &:hover{
-                .icon{
-                    img{
-                        filter: brightness(0) saturate(100%) invert(63%) sepia(4%) saturate(5214%) hue-rotate(37deg) brightness(95%) contrast(81%);
-                    }
-                }
-            }
             &::after{
-                background: url(../images/why-choose-us/wrapper-bg-2.webp);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -1356,7 +1345,7 @@
     }
     .desc{
         color: var(--color-body-2);
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 30px;
     }
     
@@ -1633,12 +1622,12 @@
 
 .home-green{
     .why-choose-wrapper-list li .icon img {
-        filter: brightness(0) saturate(100%) invert(88%) sepia(9%) saturate(2601%) hue-rotate(28deg) brightness(73%) contrast(90%);
+        filter: brightness(0) saturate(100%) invert(58%) sepia(54%) saturate(6640%) hue-rotate(352deg) brightness(102%) contrast(101%);
     }
     .service-wrapper-9 .content-area .icon{
         background: var(--primary-100);
         img{
-            filter: brightness(0) saturate(100%) invert(88%) sepia(9%) saturate(2601%) hue-rotate(28deg) brightness(73%) contrast(90%);
+            filter: brightness(0) saturate(100%) invert(58%) sepia(54%) saturate(6640%) hue-rotate(352deg) brightness(102%) contrast(101%);
         }
     }
 }
@@ -2094,5 +2083,98 @@
             flex-direction: column;
             align-items: flex-start;
         }
+    }
+}
+
+
+.col-lg-3{
+    .service-with-thumbnail{
+        padding: 20px;
+    }
+}
+
+.service-with-thumbnail{
+    padding: 30px;
+    border-radius: 8px;
+    background: var(--color-white);
+    transition: .3s;
+    &:hover{
+        transform: scale(1.02);
+        .thumbnail{
+            &::after{
+                opacity: 1;
+            }
+            .tmp-btn{
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .thumbnail{
+        display: block;
+        overflow: hidden;
+        border-radius: 6px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background: linear-gradient(0deg, #212529bf 0%, rgba(0, 0, 0, 0) 100%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+            opacity: 0;
+            border-radius: 8px;
+        }
+        .tmp-btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -20%);
+        }
+    }
+    .content{
+        margin-top: 30px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title{
+                font-size: 26px;
+                line-height: 1;
+                margin-bottom: 0;
+                font-weight: 700;
+                transition: .3s;
+            }
+            &:hover{
+                .title{
+                    color: var(--color-primary);
+                }
+            }
+        }
+        p.disc{
+            margin-top: 20px;
+        }
+    }
+}
+
+.single-feature-area-modern{
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: var(--shadow-1);
+    transition: .3s;
+    &:hover{
+        transform: scale(1.05);
+    }
+    .invers-feature-icon{
+        margin-bottom: 35px;
+        max-width: 60px;
+        height: 60px;
+    }
+    .title{
+        margin-bottom: 15px;
+        font-size: 24px;
     }
 }

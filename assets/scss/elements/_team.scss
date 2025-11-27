@@ -104,8 +104,11 @@
        } 
     }
 }
+.shadow-1{
+    box-shadow: var(--shadow-1);
+}
 .tmp-team-area2{
-    background: #f6f6f6 !important;
+    background: #f6f6f6;
 }
 .tmp-team-area3,
 .tmp-team-area2{
